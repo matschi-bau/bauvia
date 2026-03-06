@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seite nicht gefunden | Bauvia Concept GmbH</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <style>
+    .error-page {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .error-page__content {
+      max-width: 600px;
+    }
+    .error-page__code {
+      font-size: 8rem;
+      font-weight: 700;
+      color: var(--primary, #1a3a5c);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .error-page__title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--dark, #1a1a2e);
+      margin-bottom: 1rem;
+    }
+    .error-page__text {
+      font-size: 1.1rem;
+      color: var(--text-light, #6b7280);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .error-page__actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-page__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .error-page__btn--primary {
+      background: var(--primary, #1a3a5c);
+      color: #fff;
+    }
+    .error-page__btn--primary:hover {
+      background: var(--primary-dark, #0f2a45);
+      transform: translateY(-2px);
+    }
+    .error-page__btn--secondary {
+      background: transparent;
+      color: var(--primary, #1a3a5c);
+      border: 2px solid var(--primary, #1a3a5c);
+    }
+    .error-page__btn--secondary:hover {
+      background: var(--primary, #1a3a5c);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/index.html" class="header__logo">
+        <img src="/assets/images/logo-white.png" alt="Bauvia Concept GmbH Logo" id="logo-img">
+      </a>
+      <a href="/kontakt.html" class="btn btn--accent header__cta-btn">
+        <i class="fas fa-envelope"></i> Kostenloses Angebot
+      </a>
+    </div>
+  </header>
+
+  <!-- ========== 404 CONTENT ========== -->
+  <main class="error-page">
+    <div class="error-page__content">
+      <div class="error-page__code">404</div>
+      <h1 class="error-page__title">Seite nicht gefunden</h1>
+      <p class="error-page__text">
+        Die angeforderte Seite existiert leider nicht oder wurde verschoben.
+        Keine Sorge, wir helfen Ihnen gerne weiter!
+      </p>
+      <div class="error-page__actions">
+        <a href="/index.html" class="error-page__btn error-page__btn--primary">
+          <i class="fas fa-home"></i> Zur Startseite
+        </a>
+        <a href="/kontakt.html" class="error-page__btn error-page__btn--secondary">
+          <i class="fas fa-envelope"></i> Kontakt aufnehmen
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER (minimal) ========== -->
+  <footer style="background: var(--dark, #1a1a2e); color: #fff; padding: 2rem 0; text-align: center;">
+    <div class="container">
+      <p style="margin: 0; opacity: 0.7;">&copy; 2025 Bauvia Concept GmbH. Alle Rechte vorbehalten.</p>
+      <p style="margin: 0.5rem 0 0; opacity: 0.5; font-size: 0.9rem;">
+        <a href="/impressum.html" style="color: #fff; text-decoration: none;">Impressum</a> |
+        <a href="/datenschutz.html" style="color: #fff; text-decoration: none;">Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

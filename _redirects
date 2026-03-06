@@ -1,0 +1,7 @@
+# =============================================
+# Bauvia Concept GmbH - bauvia.de
+# Cloudflare Pages Redirects Configuration
+# =============================================
+
+# Redirect www to non-www (301 permanent)
+https://www.bauvia.de/* https://bauvia.de/:splat 301
