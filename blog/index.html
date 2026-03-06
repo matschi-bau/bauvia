@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; Ratgeber | Bauvia Concept GmbH | Renovierung N&uuml;rnberg</title>
+  <meta name="description" content="Tipps, Ratgeber und aktuelle Informationen rund um Renovierung, Sanierung und Modernisierung. Expertenrat von Bauvia Concept GmbH aus N&uuml;rnberg.">
+  <meta name="keywords" content="Renovierung Blog, Sanierung Ratgeber, Badsanierung Kosten, energetische Sanierung, F&ouml;rderung, N&uuml;rnberg">
+  <link rel="canonical" href="https://bauvia.de/blog/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog &amp; Ratgeber | Bauvia Concept GmbH">
+  <meta property="og:description" content="Tipps, Ratgeber und aktuelle Informationen rund um Renovierung, Sanierung und Modernisierung.">
+  <meta property="og:image" content="https://bauvia.de/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://bauvia.de/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 992px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+    }
+    .blog-card__image {
+      width: 100%;
+      height: 220px;
+      background: var(--light-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue);
+      font-size: 3rem;
+    }
+    .blog-card__body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    .blog-card__badge {
+      background: var(--blue);
+      color: #fff;
+      padding: 0.2rem 0.65rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .blog-card__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    .blog-card__title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .blog-card__title a:hover {
+      color: var(--blue);
+    }
+    .blog-card__excerpt {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+    .blog-card__link {
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.3s;
+    }
+    .blog-card__link:hover {
+      gap: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../" class="header__logo">
+        <img src="../assets/images/logo/Bauvia_jpg_logo_sa_bijelom_pozadinom_uvacano_vise.png" alt="Bauvia Concept GmbH Logo" id="logo-img">
+      </a>
+
+      <nav class="nav">
+        <div class="nav__dropdown">
+          <a href="#" class="nav__link">Leistungen <i class="fas fa-chevron-down" style="font-size:0.7rem;margin-left:4px"></i></a>
+          <div class="nav__dropdown-menu">
+            <a href="../leistungen/schluesselfertiges-renovieren.html" class="nav__dropdown-item"><i class="fas fa-key"></i> Schl&uuml;sselfertiges Renovieren</a>
+            <a href="../leistungen/wohnungsrenovierung.html" class="nav__dropdown-item"><i class="fas fa-home"></i> Wohnungsrenovierung</a>
+            <a href="../leistungen/hausrenovierung.html" class="nav__dropdown-item"><i class="fas fa-house-chimney"></i> Hausrenovierung</a>
+            <a href="../leistungen/badsanierung.html" class="nav__dropdown-item"><i class="fas fa-bath"></i> Badsanierung</a>
+            <a href="../leistungen/fenster-tueren.html" class="nav__dropdown-item"><i class="fas fa-door-open"></i> Fenster &amp; T&uuml;ren</a>
+            <a href="../leistungen/elektroinstallationen.html" class="nav__dropdown-item"><i class="fas fa-bolt"></i> Elektroinstallationen</a>
+            <a href="../leistungen/heizung-sanitaer.html" class="nav__dropdown-item"><i class="fas fa-temperature-high"></i> Heizung &amp; Sanit&auml;r</a>
+            <a href="../leistungen/trockenbau.html" class="nav__dropdown-item"><i class="fas fa-layer-group"></i> Trockenbau</a>
+            <a href="../leistungen/bodenverlegung.html" class="nav__dropdown-item"><i class="fas fa-chess-board"></i> Bodenverlegung</a>
+            <a href="../leistungen/malerarbeiten.html" class="nav__dropdown-item"><i class="fas fa-paint-roller"></i> Malerarbeiten</a>
+          </div>
+        </div>
+        <a href="../referenzen.html" class="nav__link">Referenzen</a>
+        <a href="./" class="nav__link">Blog</a>
+        <a href="../ueber-uns.html" class="nav__link">&Uuml;ber uns</a>
+      </nav>
+
+      <a href="../kontakt.html" class="btn btn--navy header__cta header__cta--desktop">Kostenloses Angebot</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../leistungen/schluesselfertiges-renovieren.html">Schl&uuml;sselfertiges Renovieren</a>
+    <a href="../leistungen/wohnungsrenovierung.html">Wohnungsrenovierung</a>
+    <a href="../leistungen/badsanierung.html">Badsanierung</a>
+    <a href="../leistungen/fenster-tueren.html">Fenster &amp; T&uuml;ren</a>
+    <a href="../referenzen.html">Referenzen</a>
+    <a href="./">Blog</a>
+    <a href="../ueber-uns.html">&Uuml;ber uns</a>
+    <a href="../kontakt.html" class="btn btn--primary">Kostenloses Angebot</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero--small" style="background-image: url('../assets/images/projects/zimmer-parkett-01.jpg')">
+    <div class="container">
+      <div class="hero__content">
+        <h1>Blog &amp; Ratgeber</h1>
+        <p class="hero__subtitle">Expertenwissen rund um Renovierung, Sanierung und Modernisierung</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG LISTING ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Aktuelles</span>
+        <h2>Unsere neuesten Beitr&auml;ge</h2>
+        <p>Praktische Tipps und Fachwissen von Ihrem Generalunternehmer aus N&uuml;rnberg</p>
+      </div>
+
+      <div class="blog-grid">
+
+        <!-- Article 1 -->
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span><i class="fas fa-calendar-alt"></i> 15.01.2025</span>
+              <span class="blog-card__badge">Ratgeber</span>
+            </div>
+            <h3 class="blog-card__title">
+              <a href="renovierung-planen-2025.html">Renovierung richtig planen: Der ultimative Leitfaden 2025</a>
+            </h3>
+            <p class="blog-card__excerpt">
+              Von der ersten Idee bis zur fertigen Renovierung &ndash; erfahren Sie in 7 Schritten, wie Sie Ihr Renovierungsprojekt professionell planen und typische Fehler vermeiden.
+            </p>
+            <a href="renovierung-planen-2025.html" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <i class="fas fa-bath"></i>
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span><i class="fas fa-calendar-alt"></i> 28.01.2025</span>
+              <span class="blog-card__badge">Kosten</span>
+            </div>
+            <h3 class="blog-card__title">
+              <a href="badsanierung-kosten.html">Badsanierung Kosten: Was kostet ein neues Bad 2025?</a>
+            </h3>
+            <p class="blog-card__excerpt">
+              Detaillierte Kosten&uuml;bersicht f&uuml;r Ihre Badsanierung: von 900 bis 1.600 &euro;/m&sup2;. Erfahren Sie, welche Faktoren den Preis beeinflussen und wo Sparpotenzial liegt.
+            </p>
+            <a href="badsanierung-kosten.html" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card">
+          <div class="blog-card__image">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span><i class="fas fa-calendar-alt"></i> 10.02.2025</span>
+              <span class="blog-card__badge">F&ouml;rderung</span>
+            </div>
+            <h3 class="blog-card__title">
+              <a href="energetische-sanierung-foerderung.html">Energetische Sanierung: F&ouml;rderungen und Zusch&uuml;sse 2025</a>
+            </h3>
+            <p class="blog-card__excerpt">
+              KfW-Kredite, BAFA-Zusch&uuml;sse und steuerliche Vorteile &ndash; so finanzieren Sie Ihre energetische Sanierung optimal und sparen langfristig Energiekosten.
+            </p>
+            <a href="energetische-sanierung-foerderung.html" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section" style="background:linear-gradient(135deg, var(--navy) 0%, #1a1a5e 100%);color:#fff;text-align:center">
+    <div class="container">
+      <h2 style="color:#fff;margin-bottom:1rem">Sie planen eine Renovierung?</h2>
+      <p style="max-width:600px;margin:0 auto 2rem;opacity:0.9;font-size:1.1rem">
+        Lassen Sie sich von unserem erfahrenen Team beraten. Wir erstellen Ihnen ein kostenloses und unverbindliches Angebot f&uuml;r Ihr Projekt.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="../kontakt.html" class="btn btn--primary btn--lg">Kostenloses Angebot anfordern</a>
+        <a href="tel:+4991181677497" class="btn btn--secondary btn--lg"><i class="fas fa-phone"></i> 0911 81677497</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4>Bauvia Concept GmbH</h4>
+          <p>Ihr Generalunternehmer f&uuml;r professionelle Renovierungen in N&uuml;rnberg und Umgebung.</p>
+          <p style="margin-top:1rem"><small>Edisonstra&szlig;e 60, 90431 N&uuml;rnberg</small></p>
+        </div>
+        <div class="footer__col">
+          <h4>Leistungen</h4>
+          <ul class="footer__links">
+            <li><a href="../leistungen/komplettsanierung.html">Komplettsanierung</a></li>
+            <li><a href="../leistungen/badsanierung.html">Badsanierung</a></li>
+            <li><a href="../leistungen/bodenverlegung.html">Bodenverlegung</a></li>
+            <li><a href="../leistungen/malerarbeiten.html">Malerarbeiten</a></li>
+            <li><a href="../leistungen/fenster-tueren.html">Fenster &amp; T&uuml;ren</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Unternehmen</h4>
+          <ul class="footer__links">
+            <li><a href="../ueber-uns.html">&Uuml;ber uns</a></li>
+            <li><a href="../referenzen.html">Referenzen</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="../kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+4991181677497"><i class="fas fa-phone"></i> 0911 81677497</a></li>
+            <li><a href="https://wa.me/4917647757700"><i class="fab fa-whatsapp"></i> 0176 47757700</a></li>
+            <li><a href="mailto:kontakt@bauvia.de"><i class="fas fa-envelope"></i> kontakt@bauvia.de</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Bauvia Concept GmbH. Alle Rechte vorbehalten.</p>
+        <div class="footer__legal">
+          <a href="../impressum.html">Impressum</a>
+          <a href="../datenschutz.html">Datenschutz</a>
+          <a href="../agb.html">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/4917647757700?text=Hallo%20Bauvia-Team%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Renovierung." class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
