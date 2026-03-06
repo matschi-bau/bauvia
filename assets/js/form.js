@@ -51,7 +51,7 @@
 
       if (response.ok) {
         // Redirect to thank you page
-        window.location.href = '/danke.html';
+        window.location.href = 'danke.html';
       } else {
         throw new Error('Formular konnte nicht gesendet werden.');
       }
