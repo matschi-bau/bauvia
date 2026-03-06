@@ -1,0 +1,43 @@
+/* BAUVIA - Responsive (Mobile First) */
+
+@media (max-width: 1024px) {
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .process { grid-template-columns: repeat(2, 1fr); }
+  .footer__grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery { columns: 2; }
+}
+
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .header__cta--desktop { display: none; }
+  .hamburger { display: flex; }
+  .grid--2, .grid--3, .grid--4, .grid--2x5 { grid-template-columns: 1fr; }
+  .hero { min-height: 90vh; }
+  .hero__buttons { flex-direction: column; }
+  .hero__buttons .btn { width: 100%; }
+  .hero__trust { flex-direction: column; gap: 0.75rem; }
+  .section { padding: 3rem 0; }
+  .section-header { margin-bottom: 2rem; }
+  .process { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .footer__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+  .cookie-banner__inner { flex-direction: column; text-align: center; }
+  .cookie-banner__buttons { width: 100%; justify-content: center; }
+  .gallery { columns: 1; }
+  .calculator { padding: 1.5rem; }
+  .calculator__price { font-size: 1.5rem; }
+  .nav__dropdown-menu { min-width: unset; grid-template-columns: 1fr; }
+  .whatsapp-float { width: 55px; height: 55px; bottom: 20px; right: 20px; }
+  .whatsapp-tooltip { display: none; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  .btn { padding: 0.75rem 1.5rem; font-size: 0.9rem; }
+  .btn--lg { padding: 0.875rem 2rem; font-size: 1rem; }
+  .card { padding: 1.5rem; }
+  .process { grid-template-columns: 1fr; }
+  .hero__trust-item { font-size: 0.85rem; }
+}
